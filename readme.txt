@@ -10,7 +10,7 @@ Including standard flickr slideshow into your blog. Call your FlickrSlideshow by
 
 == Description ==
 
-I did not find any gallery which fit to my expectations. I do not private pictures from flickr to be included to
+I did not find any gallery which fit fulfilled my expectations. I do not need private pictures from flickr to be included to
 my block, as once included they are not private anymore. That's why I wanted to use the standard functionality
 of flickr to embed slideshows.
 
