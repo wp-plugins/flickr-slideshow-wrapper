@@ -7,7 +7,6 @@ Tested up to: 2.5.1
 Stable tag: 1.0
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding <set_id="XXX"> to your content. 
-Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (www.flickr.com).
 
 == Description ==
 
