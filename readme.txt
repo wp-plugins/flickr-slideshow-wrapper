@@ -27,8 +27,7 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 No FAQ available yet.
 
 == Screenshots ==
-
-1. screenshot-1.jpg
+<img class='screenshot' src='http://www.ramgad.com/wp-content/download/fssw/screenshot-1.jpg' alt='fssw screenshot 1' />
 
 == Arbitrary section ==
 Written by Dr. Jeannot Muller, please feel free to contact me under jeannot.muller@ramgad.com
