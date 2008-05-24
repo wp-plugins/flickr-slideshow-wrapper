@@ -2,8 +2,8 @@
 /*
 Plugin Name: Flickr-SlideShow-Wrapper
 Plugin URI: http://www.ramgad.com
-Description: Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set_id="XXX"&gt; to your content. Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>).
-Version: 1.3
+Description: Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>). You can as well implement a <a href="http://www.flickr.com">www.slideflickr.com</a> slideshow by putting the slideflickr id into <slidef="XYZ">.
+Version: 2.0
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
 Update Server: http://www.ramgad.com/wp-content/download/wp/
@@ -59,12 +59,13 @@ function fssw_description_option_page() {
 				            <input name="fssw_scroll" size="3" value="<?=get_option("fssw_scroll");?>" type="text" /></td></tr>
 				</table>
 	      <br>
-	      <p class="submit"><input name="submit" type="submit" id="submit" value="Save changes &raquo;"></p>
-	     <input class="submit" name="action" value="insert": type="hidden" />
+	      <p class="submit"><input name="submit" type="submit" id="submit" value="Save changes &raquo;">
+	     <input class="submit" name="action" value="insert": type="hidden" /></p>
 	    </form>
 	  </div>
 	</div>
-	<p style="text-align:justify;">Call your FlickrSlideshow by adding &lt;set_id="XXX"&gt; to your content. Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>).</p>
+	<p style="text-align:justify;">Call your FlickrSlideshow by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>).</p>
+	<p style="text-algin:justify;">You can call as well a  <a href="http://www.slideflickr.com/">www.slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;
 	<p style="text-align:justify;">If you have problems with WP-SlideShowFlickr, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a></p>
 
 <?php
@@ -91,8 +92,12 @@ function get_flickr_set_id($content) {
 		 }
 
 	// parse and replace	 
-	         $content = preg_replace('/<set_id="([a-z0-9_]+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
-        return $content;
+
+                 $content = preg_replace('/<set_id="([a-zA-Z0-9_]+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
+
+                 $content = preg_replace('/<slidef="([a-zA-Z0-9_]+)"\/?>/', '<object width="' . $fssw_width . '" height="' . $fssw_height . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_width . '" height="' . $fssw_height . '"></embed></object>', $content);
+
+return $content;
     }
 
 

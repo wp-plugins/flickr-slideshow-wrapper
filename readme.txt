@@ -1,10 +1,10 @@
 === Flickr-SlideShow-Wrapper ===
 Contributors: jeannot.muller
 Donate link: http://www.ramgad.com/
-Tags: flickr, gallery, slideshow, wrapper, inline, pictures, images
+Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 1.3
+Stable tag: 2.0
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding <set_id="XYZ"> to your content. 
 
@@ -20,8 +20,9 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 1. Upload 'FlickrSlideShowWrapper.php' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Customize the settings under /Settings/FSSW/
-4. Place '<set_id="123213231231231">' in your content. Please pay attention to put the coding into the HTML section (HTML view) or in case you use other plugins, that the HTML code show <set_id="........"> and not for instance &lt;set_id etc.
-5. Have fun, and drop me a comment on www.ramgad.com if you have any comments, remarks, advices, wishes or if you're just happy.
+4. Place '<set_id="123213231231231">' in your content. Please pay attention to put the coding into the HTML section (HTML view)
+5. You can call as well a  <a href="http://www.slideflickr.com/">www.slideflickr.com</a> slideshow by putting the slideflickr id into <slidef="XYZ">
+6. Have fun, and drop me a comment on www.ramgad.com if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
 I have issues to get the set_id code implemented. The syntax is <set_id="XYZ"> where XYZ has to be replaced by the numeric string you see on flickr in the URL once you have chosen a set.
