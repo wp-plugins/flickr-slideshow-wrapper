@@ -1,4 +1,4 @@
-=== Flickr-SlideShow-Wrapper ===
+=== flickr-slideshow-wrapper ===
 Contributors: jeannot.muller
 Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow
