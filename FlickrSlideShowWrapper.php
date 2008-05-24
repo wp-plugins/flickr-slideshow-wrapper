@@ -3,7 +3,7 @@
 Plugin Name: Flickr-SlideShow-Wrapper
 Plugin URI: http://www.ramgad.com
 Description: Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set_id="XXX"&gt; to your content. Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>).
-Version: 1.2
+Version: 1.3
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
 Update Server: http://www.ramgad.com/wp-content/download/wp/
@@ -60,7 +60,7 @@ function fssw_description_option_page() {
 				</table>
 	      <br>
 	      <p class="submit"><input name="submit" type="submit" id="submit" value="Save changes &raquo;"></p>
-	     <input class="Submit" name="action" value="insert": type="hidden" />
+	     <input class="submit" name="action" value="insert": type="hidden" />
 	    </form>
 	  </div>
 	</div>

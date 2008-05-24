@@ -4,9 +4,9 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery, slideshow, wrapper, inline, pictures, images
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 1.2
+Stable tag: 1.3
 
-Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding <set_id="XXX"> to your content. 
+Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding <set_id="XYZ"> to your content. 
 
 == Description ==
 
@@ -24,10 +24,18 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 5. Have fun, and drop me a comment on www.ramgad.com if you have any comments, remarks, advices, wishes or if you're just happy.2
 
 == Frequently Asked Questions ==
-No FAQ available yet.
+1. I have issues to get the set_id code implemented. The syntax is <set_id="XYZ"> where XYZ has to be replaced by the numeric string you see on flickr in the URL once you have chosen a set.
 
+Please have a look at a public set from my page:
+http://www.flickr.com/photos/jeannot_muller/sets/72157605227221245/
+
+the numeric string between sets/ and / is your set_id ... for the above example = 72157605227221245, hence the syntax is <set_id="72157605227221245">
+
+Ensure that you have put the code into your html section of your blog, it should not have been converted to something like &lt;set_id="XYZ"&gt;
 == Screenshots ==
-<img class='screenshot' src='http://www.ramgad.com/wp-content/download/fssw/screenshot-1.jpg' alt='fssw screenshot 1' />
+1. example 1
+2. example 2
+3. example settings
 
 == Arbitrary section ==
 Written by Dr. Jeannot Muller, please feel free to contact me under jeannot.muller@ramgad.com
