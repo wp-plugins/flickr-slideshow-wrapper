@@ -6,7 +6,7 @@ Description: Including standard flickr slideshow into your blog. Call your Flick
 Version: 2.6
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
-Update Server: http://downloads.wordpress.org/plugin/flickr-slideshow-wrapper.zip
+Update Server: http://www.ramgad.com/svn/flickr-slideshow-wrapper/trunk/
 Min WP Version: 2.5
 Max WP Version: 2.5.1
 */
