@@ -36,7 +36,7 @@ Ensure that you have put the code into your html section of your blog, not the v
 == Screenshots ==
 1. example 1
 2. example 2
-3. example settings
+3. example of settings
 
 == Arbitrary section ==
 Written by Dr. Jeannot Muller, please feel free to contact me under jeannot.muller@ramgad.com
