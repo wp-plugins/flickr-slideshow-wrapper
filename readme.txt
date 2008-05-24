@@ -4,9 +4,9 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 2.1
+Stable tag: 2.2
 
-Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding <set_id="XYZ"> to your content. 
+Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
 == Description ==
 
@@ -26,7 +26,7 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 
 == Frequently Asked Questions ==
 <strong>I have issues to get the set_id code implemented.</strong>
-The syntax is &lt;set_id="XYZ"&gt; or &lt;slidef="XYZ"&gt; where XYZ has to be replaced by the numeric string you see on flickr in the URL once you have chosen a set.
+The syntax is &lt;set&#95;id="XYZ"&gt; or &lt;slidef="XYZ"&gt; where XYZ has to be replaced by the numeric string you see on flickr in the URL once you have chosen a set.
 
 Please have a look at a public set from my page:
 http://www.flickr.com/photos/jeannot_muller/sets/72157605227221245/
