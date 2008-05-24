@@ -20,20 +20,19 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 1. Upload 'FlickrSlideShowWrapper.php' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Customize the settings under /Settings/FSSW/
-4. Place &lt;set_id="123213231231231"&gt; from your <a href="www.flickr.com">flickr set</a> into your content. Please pay attention to put the coding into the HTML section (HTML view)
+4. Place &lt;set&#95;id="123213231231231"&gt; from your <a href="www.flickr.com">flickr set</a> into your content. Please pay attention to put the coding into the HTML section (HTML view)
 5. You can call as well a  <a href="http://www.slideflickr.com/">www.slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;
 6. Have fun, and drop me a comment on www.ramgad.com if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
-<strong>I have issues to get the set_id code implemented.</strong>
+<strong>I have issues to get the set_id code implemented.</strong></br>
 The syntax is &lt;set&#95;id="XYZ"&gt; or &lt;slidef="XYZ"&gt; where XYZ has to be replaced by the numeric string you see on flickr in the URL once you have chosen a set.
 
 Please have a look at a public set from my page:
 http://www.flickr.com/photos/jeannot_muller/sets/72157605227221245/
-
-the numeric string between sets/ and / is your set_id ... for the above example = 72157605227221245, hence the syntax is &lt;set_id="72157605227221245"&gt;
-
+The numeric string between sets/ and / is your set&#95;id ... for the above example = 72157605227221245, hence the syntax is &lt;set&#95;id="72157605227221245"&gt;
 Ensure that you have put the code into your html section of your blog, not the visual one!
+
 == Screenshots ==
 1. example 1
 2. example 2
