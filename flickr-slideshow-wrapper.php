@@ -3,7 +3,7 @@
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/flickr-slide-show-wrapper/
 Description: Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>). You can as well implement a <a href="http://www.flickr.com">www.slideflickr.com</a> slideshow by putting the slideflickr id into <slidef="XYZ">.
-Version: 2.7
+Version: 2.8
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
 Min WP Version: 2.5
