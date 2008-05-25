@@ -4,7 +4,7 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 3.0.3
+Stable tag: 3.2
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
@@ -34,9 +34,11 @@ The numeric string between sets/ and / is your set&#95;id ... for the above exam
 Ensure that you have put the code into your html section of your blog, not the visual one!
 
 == Screenshots ==
-1. example 1
-2. example 2
-3. example of settings
+1. Option panel
+
+2. Slideshow (main view)
+
+3. Slideshow (detailed view)
 
 == Arbitrary section ==
 Written by Dr. Jeannot Muller, please feel free to contact me under jeannot.muller@ramgad.com
