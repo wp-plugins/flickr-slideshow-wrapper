@@ -4,12 +4,11 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 3.2
+Stable tag: 3.6.0
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
 == Description ==
-
 I didn't find any gallery which fulfilled my expectations. I don't need private pictures from flickr to be included to
 my block, as once included they are not private anymore. That's why I wanted to use the standard functionality
 of flickr to embed slideshows.
@@ -35,9 +34,7 @@ Ensure that you have put the code into your html section of your blog, not the v
 
 == Screenshots ==
 1. Option panel
-
 2. Slideshow (main view)
-
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
