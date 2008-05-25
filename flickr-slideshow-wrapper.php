@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: flickr-slideshow-wrapper
-Plugin URI: http://www.ramgad.com/flickr-slide-show-wrapper/
+Plugin URI: http://wordpress.org/extend/plugins/flickr-slideshow-wrapper/
 Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com">flickr.com</a>). You can as well implement a <a href="http://www.slideflickr.com">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;.
 Version: 3.0.1
 Author: Dr. Jeannot Muller
