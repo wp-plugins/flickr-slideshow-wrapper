@@ -2,8 +2,8 @@
 /*
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/flickr-slideshow-wrapper/
-Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com">flickr.com</a>). You can as well implement a <a href="http://www.slideflickr.com">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;.
-Version: 3.7.8
+Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;.
+Version: 3.8.0
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
 Min WP Version: 2.1
@@ -18,7 +18,8 @@ Max WP Version: 2.5.1
     	update_option("fssw_scroll",$HTTP_POST_VARS['fssw_scroll']);
         update_option("fssw_sfli_w",$HTTP_POST_VARS['fssw_sfli_w']);
         update_option("fssw_sfli_h",$HTTP_POST_VARS['fssw_sfli_h']);
-	}
+        update_option("fssw_userid",$HTTP_POST_VARS['fssw_userid']);
+}
 
 if (!class_exists('fssw_main')) {
     class fssw_main {
@@ -50,26 +51,29 @@ function fssw_description_option_page() {
 						<table class="form-table">
 						<tr><th scope="col" colspan="3" cellpadding="15">Settings</th></tr>
 		                                <tr><th scope="row">Width: (flickr)</th><td>
-		                    <input name="fssw_width" size="3" value="<?=get_option("fssw_width");?>" type="text" /></td></tr>
+		                    <input name="fssw_width" size="3" value="<?=get_option("fssw_width");?>" type="text" />   Example: 450</td></tr>
 						<tr><th scope="row">Height: (flickr)</th><td>
-		                    <input name="fssw_height" size="3" value="<?=get_option("fssw_height");?>" type="text" /></td></tr>
+		                    <input name="fssw_height" size="3" value="<?=get_option("fssw_height");?>" type="text" />   Example: 450</td></tr>
 						<tr><th scope="row">Border: (flickr)</th><td>
-			            <input name="fssw_border" size="1" value="<?=get_option("fssw_border");?>" type="text" /></td></tr>
+			            <input name="fssw_border" size="3" value="<?=get_option("fssw_border");?>" type="text" />   Example: 0</td></tr>
 						<tr><th scope="row">Scrolling (yes|no): (flickr)</th><td>
-				    <input name="fssw_scroll" size="3" value="<?=get_option("fssw_scroll");?>" type="text" /></td></tr>
-                                                <tr><th scope="row">Width: (slideflickr)</th><td>
-			            <input name="fssw_sfli_w" size="3" value="<?=get_option("fssw_sfli_w");?>" type="text" /></td></tr>
+				    <input name="fssw_scroll" size="3" value="<?=get_option("fssw_scroll");?>" type="text" />   Example: no</td></tr>
+                                                <tr><th scope="row">User-ID: (flickr)</th><td>
+			            <input name="fssw_userid" size="15" value="<?=get_option("fssw_userid");?>" type="text" />   Example: 12345678@A12 (please use <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> to retrieve your ID)</td></tr>
+				                <tr><th scope="row">Width: (slideflickr)</th><td>
+			            <input name="fssw_sfli_w" size="3" value="<?=get_option("fssw_sfli_w");?>" type="text" />   Example: 450</td></tr>
                                                 <tr><th scope="row">Height: (slideflickr)</th><td>
-			            <input name="fssw_sfli_h" size="3" value="<?=get_option("fssw_sfli_h");?>" type="text" /></td></tr>
-				</table>
+			            <input name="fssw_sfli_h" size="3" value="<?=get_option("fssw_sfli_h");?>" type="text" />   Example: 450</td></tr>
+</table>
 	      <br>
 	      <p class="submit"><input name="submit" type="submit" id="submit" value="Save changes &raquo;">
 	     <input class="submit" name="action" value="insert": type="hidden" /></p>
 	    </form>
 	  </div>
 	</div>
-	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XXX by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com">www.flickr.com</a>).</p>
-	<p style="text-algin:justify;">You can call as well a  <a href="http://www.slideflickr.com/">www.slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
+	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com" target="_blank">flickr.com</a>).</p>
+	<p style="text-algin:justify;">With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. You need to specify your flickr user-id under settings to get this feature look for tags in your library only. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.</p>
+	<p style="text-algin:justify;">You can call as well a  <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
 	<p style="text-align:justify;">If you have problems with FSSW, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a></p>
 
 <?php
@@ -78,7 +82,7 @@ function fssw_description_option_page() {
 
 // Adminmenu Optionen erweitern
 function fssw_description_add_menu() {
-      global $fssw_width, $fssw_height, $fssw_border, $fssw_scroll, $fssw_sfli_w, $fssw_sfli_h; 
+      global $fssw_width, $fssw_height, $fssw_border, $fssw_scroll, $fssw_sfli_w, $fssw_sfli_h; $fssw_userid;
       add_options_page('FSSW', 'FSSW', 9, __FILE__, 'fssw_description_option_page'); //optionenseite hinzufügen
 }
 
@@ -89,6 +93,7 @@ function get_flickr_set_id($content) {
 		 $fssw_scroll  = get_option('fssw_scroll');
 		 $fssw_sfli_w  = get_option('fssw_sfli_w');
 		 $fssw_sfli_h  = get_option('fssw_sfli_h');
+		 $fssw_userid  = get_option('fssw_userid');
 
 // standard initialisation (default values)	
 		 if ( $fssw_width == null or $fssw_height == null) {
@@ -99,6 +104,11 @@ function get_flickr_set_id($content) {
 	// parse and replace	 
 
                  $content = preg_replace('/<set_id="([a-zA-Z0-9_]+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
+
+
+                 $content = preg_replace('/<set_tag="(\w.+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?user_id=' . $fssw_userid . '&tags=$1' . '" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
+
+
 
                  $content = preg_replace('/<slidef="([a-zA-Z0-9_]+)"\/?>/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
 
