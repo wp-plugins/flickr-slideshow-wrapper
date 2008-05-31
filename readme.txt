@@ -4,7 +4,7 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 3.8.0
+Stable tag: 3.8.1
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
@@ -23,7 +23,8 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 5. You can call as well a  <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;
 6. With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.
 7. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
-8. Have fun, and drop me a comment on <a href="www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
+8. Ensure that you have put the code into your html section of your blog, not the visual one!
+9. Have fun, and drop me a comment on <a href="www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
 Please read the FAQ <a href="http://www.ramgad.com/flickr-slideshow-wrapper/faq-fssw/" target="_blank">here</a>.
@@ -34,4 +35,4 @@ Please read the FAQ <a href="http://www.ramgad.com/flickr-slideshow-wrapper/faq-
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
-Written by Dr. Jeannot Muller, please feel free to contact me under <a href="mailto:jeannot.muller@ramgad.com>jeannot.muller@ramgad.com</a>
+Written by Dr. Jeannot Muller, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a>
