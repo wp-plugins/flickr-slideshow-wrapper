@@ -4,7 +4,7 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 2.5.1
-Stable tag: 4.1.1
+Stable tag: 4.2.2
 
 Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
@@ -24,10 +24,10 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 6. With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.
 7. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
 8. Ensure that you have put the code into your html section of your blog, not the visual one!
-9. Have fun, and drop me a comment on <a href="www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
+9. Have fun, and drop me a comment on <a href="http://www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
-Please read the FAQ <a href="http://www.ramgad.com/flickr-slideshow-wrapper/faq-fssw/" target="_blank">here</a>.
+Please read the FAQ <a href="http://www.ramgad.com/fssw" target="_blank">here</a>.
 
 == Screenshots ==
 1. Option panel. Many thanks to <a href="http://www.pixelagogo.com">Cory Shubert</a> who authorized me to use some of his pictures for the screenshots you can find in the deployment package and here!
