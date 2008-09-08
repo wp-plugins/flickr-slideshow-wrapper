@@ -117,7 +117,7 @@ function get_flickr_set_id($content) {
                  $content = preg_replace('/<slidef="([a-zA-Z0-9_]+)"\/?>/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
 
 
-                 $content = preg_replacece('/\[slidef=([a-zA-Z0-9_]+)\]/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
+                 $content = preg_replace('/\[slidef=([a-zA-Z0-9_]+)\]/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
 
 
 return $content;
