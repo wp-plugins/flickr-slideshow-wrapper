@@ -2,12 +2,12 @@
 /*
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/flickr-slideshow-wrapper/
-Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;.
-Version: 4.1.1
+Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ].
+Version: 4.6.2
 Author: Dr. Jeannot Muller
 Author URI: http://www.ramgad.com/
 Min WP Version: 2.1
-Max WP Version: 2.5.1
+Max WP Version: 2.6.2
 */
 
 // Update routines
@@ -103,7 +103,11 @@ function get_flickr_set_id($content) {
 
 	// parse and replace	 
 
-                 $content = preg_replace('/<set_id="([a-zA-Z0-9_]+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
+
+                $content = preg_replace('/<set_id="([a-zA-Z0-9_]+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
+
+
+                $content = preg_replace('/\[set_id=([a-zA-Z0-9_]+)\]/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?set_id=$1" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
 
 
                  $content = preg_replace('/<set_tag="(\w.+)"\/?>/', '<iframe width="' . $fssw_width . '" height="' . $fssw_height . '" src="http://www.flickr.com/slideShow/index.gne?user_id=' . $fssw_userid . '&tags=$1' . '" frameBorder="' . $fssw_border . '" scrolling="' . $fssw_scroll . '"></iframe>', $content);
@@ -111,6 +115,10 @@ function get_flickr_set_id($content) {
 
 
                  $content = preg_replace('/<slidef="([a-zA-Z0-9_]+)"\/?>/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
+
+
+                 $content = preg_replace('/\[slidef=([a-zA-Z0-9_]+)\]/', '<object width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"><param name="movie" value="http://www.slideflickr.com/slide/$1"></param><param name="wmode" value="transparent"></param><embed src="http://www.slideflickr.com/slide/$1" type="application/x-shockwave-flash" wmode="transparent" width="' . $fssw_sfli_w . '" height="' . $fssw_sfli_h . '"></embed></object>', $content);
+
 
 return $content;
     }
