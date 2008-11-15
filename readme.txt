@@ -3,10 +3,10 @@ Contributors: jeannot.muller
 Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
-Tested up to: 2.6.2
-Stable tag: 4.6.2
+Tested up to: 2.7
+Stable tag: 4.7.2
 
-Including standard flickr slideshow into your blog. Call your FlickrSlideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
+Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
 == Description ==
 I didn't find any gallery which fulfilled my expectations. I don't need private pictures from flickr to be included to
@@ -36,4 +36,4 @@ Please read the FAQ <a href="http://www.ramgad.com/fssw" target="_blank">here</a
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
-Written by Dr. Jeannot Muller, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a>
+Written by Jeannot Muller, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a>
