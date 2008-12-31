@@ -4,7 +4,7 @@ Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 2.8
-Stable tag: 4.7.4
+Stable tag: 4.7.5
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
@@ -25,7 +25,7 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 7. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
 8. Ensure that you have put the code into your html section of your blog, not the visual one!
 9. Have fun, and drop me a comment on <a href="http://www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
-For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ].
+For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. This is even the better choice as the code is not destroyed by switching from visual to htmal view (I'm mainly using html view only ;-) ).
 
 == Frequently Asked Questions ==
 Please read the FAQ <a href="http://www.ramgad.com/fssw" target="_blank">here</a>.
