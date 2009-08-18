@@ -3,7 +3,7 @@
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/fssw/
 Description: Including flickr slideshows. Call fssw by adding &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ].
-Version: 4.7.8
+Version: 4.7.9
 Author: Jeannot Muller
 Author URI: http://www.ramgad.com/
 Min WP Version: 2.1
@@ -11,7 +11,7 @@ Max WP Version: 2.9
 */
 
 // Update routines
-	if ('insert' == $HTTP_POST_VARS['action']) {
+	if ('insert' == $HTTP_POST_VARS['action_fssw']) {
     	update_option("fssw_width",$HTTP_POST_VARS['fssw_width']);
     	update_option("fssw_height",$HTTP_POST_VARS['fssw_height']);
     	update_option("fssw_border",$HTTP_POST_VARS['fssw_border']);
@@ -66,8 +66,8 @@ function fssw_description_option_page() {
 			            <input name="fssw_sfli_h" size="3" value="<?=get_option("fssw_sfli_h");?>" type="text" /><span style="color:red;">   Example: 450</span></td></tr>
 </table>
 	      <br>
-	      <p class="submit"><input name="submit" type="submit" id="submit" value="Save changes &raquo;">
-	     <input class="submit" name="action" value="insert": type="hidden" /></p>
+	      <p class="submit_fssw"><input name="submit_fssw" type="submit" id="submit_fssw" value="Save changes &raquo;">
+	     <input class="submit" name="action_fssw" value="insert": type="hidden" /></p>
 	    </form>
 	  </div>
 	</div>
