@@ -3,8 +3,8 @@ Contributors: jeannot.muller
 Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
-Tested up to: 3.1
-Stable tag: 4.8.4
+Tested up to: 3.0.1
+Stable tag: 4.8.5
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
