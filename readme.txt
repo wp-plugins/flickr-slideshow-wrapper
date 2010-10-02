@@ -3,8 +3,8 @@ Contributors: jeannot.muller
 Donate link: http://www.ramgad.com/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
-Tested up to: 3.1
-Stable tag: 4.8.2
+Tested up to: 3.0.1
+Stable tag: 4.8.5
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding &lt;set&#95;id="XYZ"&gt; to your content. 
 
@@ -28,7 +28,7 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. This is even the better choice as the code is not destroyed by switching from visual to htmal view (I'm mainly using html view only ;-) ).
 
 == Frequently Asked Questions ==
-Please read the FAQ <a href="http://www.ramgad.com/wordpress-plugins" target="_blank">here</a>.
+Please read the FAQ <a href="http://www.ramgad.com/software/wordpress/wordpress-plugins/" target="_blank">here</a>.
 
 == Screenshots ==
 1. Option panel. Many thanks to <a href="http://www.pixelagogo.com">Cory Shubert</a> who authorized me to use some of his pictures for the screenshots you can find in the deployment package and here!
@@ -36,4 +36,4 @@ Please read the FAQ <a href="http://www.ramgad.com/wordpress-plugins" target="_b
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
-Written by Jeannot Muller, please feel free to contact me: <a href="mailto:jeannot.muller@ramgad.com">jeannot.muller@ramgad.com</a>
+Written by Jeannot Muller, please feel free to post a comment at <a href="http://www.ramgad.com/software/wordpress/wordpress-plugins/" target="_blank">http://www.ramgad.com/software/wordpress/wordpress-plugins/</a>
