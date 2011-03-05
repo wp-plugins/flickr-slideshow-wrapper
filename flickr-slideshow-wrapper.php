@@ -2,23 +2,23 @@
 /*
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/software/wordpress/wordpress-plugins/
-Description: Including flickr slideshows. Call fssw by adding [set_id=XYZ] (recommended!) or[set_id=XYZ] (recommended!) or &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ].
-Version: 4.9.2
+Description: Including flickr slideshows. Call fssw by adding [set_id=XYZ] (recommended!) or[set_id=XYZ] (recommended!) or &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. Version 5.0.1 or higher are requesting PHP5!
+Version: 5.0.2
 Author: Jeannot Muller
 Author URI: http://www.ramgad.com/
 Min WP Version: 2.5
-Max WP Version: 3.0.1
+Max WP Version: 3.1
 */
 
 // Update routines
-	if ('insert' == $HTTP_POST_VARS['action_fssw']) {
-    	update_option("fssw_width",$HTTP_POST_VARS['fssw_width']);
-    	update_option("fssw_height",$HTTP_POST_VARS['fssw_height']);
-    	update_option("fssw_border",$HTTP_POST_VARS['fssw_border']);
-    	update_option("fssw_scroll",$HTTP_POST_VARS['fssw_scroll']);
-        update_option("fssw_sfli_w",$HTTP_POST_VARS['fssw_sfli_w']);
-        update_option("fssw_sfli_h",$HTTP_POST_VARS['fssw_sfli_h']);
-        update_option("fssw_userid",$HTTP_POST_VARS['fssw_userid']);
+	if ('insert' == $_POST['action_fssw']) {
+    	update_option("fssw_width",$_POST['fssw_width']);
+    	update_option("fssw_height",$_POST['fssw_height']);
+    	update_option("fssw_border",$_POST['fssw_border']);
+    	update_option("fssw_scroll",$_POST['fssw_scroll']);
+        update_option("fssw_sfli_w",$_POST['fssw_sfli_w']);
+        update_option("fssw_sfli_h",$_POST['fssw_sfli_h']);
+        update_option("fssw_userid",$_POST['fssw_userid']);
 }
 
 if (!class_exists('fssw_main')) {
@@ -32,7 +32,7 @@ if (!class_exists('fssw_main')) {
 		* PHP 5 Constructor
 		*/		
 		function __construct(){
-			// Registrieren der WordPress-Hooks
+			// Registration
 			add_action('admin_menu', 'fssw_description_add_menu');
 			add_filter('the_content', 'get_flickr_set_id');
 		}
@@ -67,7 +67,7 @@ function fssw_description_option_page() {
 </table>
 	      <br>
 	      <p class="submit_fssw"><input name="submit_fssw" type="submit" id="submit_fssw" value="Save changes &raquo;">
-	     <input class="submit" name="action_fssw" value="insert": type="hidden" /></p>
+	     <input class="submit" name="action_fssw" value="insert" type="hidden" /></p>
 	    </form>
 	  </div>
 	</div>
@@ -130,3 +130,4 @@ if (class_exists('fssw_main')) {
 	$fssw_main = new fssw_main();
 }
 ?>
+
