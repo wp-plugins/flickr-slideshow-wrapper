@@ -1,10 +1,10 @@
 === flickr-slideshow-wrapper ===
 Contributors: jeannot.muller
-Donate link: http://www.ramgad.com/software/wordpress/wordpress-plugins/
+Donate link: http://www.ramgad.com/wordpress-plugins/9-flickr-slideshow-wrapper.html
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 3.3.2
-Stable tag: 5.1.2
+Stable tag: 5.1.3
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding [set_id=XYZ] to your content.
 
@@ -26,7 +26,7 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 10. Have fun, and drop me a comment on <a href="http://www.ramgad.com" target="_blank">ramgad.com</a> if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
-Please read the FAQ <a href="http://www.ramgad.com/software/wordpress/wordpress-plugins/" target="_blank">here</a>.
+Please read the FAQ <a href="http://www.ramgad.com/wordpress-plugins/9-flickr-slideshow-wrapper.html" target="_blank">here</a>.
 
 == Screenshots ==
 1. Option panel. Many thanks to <a href="http://www.pixelagogo.com">Cory Shubert</a> who authorized me to use some of his pictures for the screenshots you can find in the deployment package and here!
