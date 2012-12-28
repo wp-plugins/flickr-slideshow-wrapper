@@ -3,7 +3,7 @@
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/board7-code-is-poetry/board8-wordpress/3-flickr-slideshow-wrapper/
 Description: Including flickr slideshows. Call fssw by adding [set_id=XYZ] (recommended!) or[set_id=XYZ] (recommended!) or &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. Version 5.0.1 or higher are requesting PHP5!
-Version: 5.2.1
+Version: 5.2.2
 Author: Jeannot Muller
 Author URI: http://www.ramgad.com/fssw/
 Min WP Version: 2.5
@@ -76,7 +76,7 @@ function fssw_description_option_page() {
 	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com" target="_blank">flickr.com</a>).</p>
 	<p style="text-algin:justify;">With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. You need to specify your flickr user-id under settings to get this feature look for tags in your library only. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.</p>
 	<p style="text-algin:justify;">You can call as well a  <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
-	<p style="text-align:justify;">If you have problems with FSSW, please feel free to drop a comment at: <a href="http://www.ramgad.com/software/wordpress/wordpress-plugins/">http://www.ramgad.com/software/wordpress/wordpress-plugins/</a></p>
+	<p style="text-align:justify;">If you have problems with FSSW, please feel free to drop a comment at: <a href="http://www.ramgad.com/fssw/">http://www.ramgad.com/fssw/</a></p>
 
 <?php
 

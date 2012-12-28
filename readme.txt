@@ -4,7 +4,7 @@ Donate link: http://www.ramgad.com/fssw/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 3.5
-Stable tag: 5.2.1
+Stable tag: 5.2.2
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding [set_id=XYZ] to your content.
 
