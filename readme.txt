@@ -1,10 +1,10 @@
 === flickr-slideshow-wrapper ===
 Contributors: jeannot.muller
-Donate link: http://www.ramgad.com/board7-code-is-poetry/board8-wordpress/3-flickr-slideshow-wrapper/
+Donate link: http://www.ramgad.com/fssw/
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 3.5
-Stable tag: 5.2.0
+Stable tag: 5.2.1
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding [set_id=XYZ] to your content.
 
@@ -34,4 +34,4 @@ Please read the FAQ <a href="http://www.ramgad.com/board7-code-is-poetry/board8-
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
-Written by Jeannot Muller, please feel free to post a comment at <a href="http://www.ramgad.com/board7-code-is-poetry/board8-wordpress/3-flickr-slideshow-wrapper/" target="_blank">http://www.ramgad.com/board7-code-is-poetry/board8-wordpress/3-flickr-slideshow-wrapper/</a>
+Written by Jeannot Muller, please feel free to post a comment at <a href="http://www.ramgad.com/fssw/" target="_blank">http://www.ramgad.com/fssw/</a>
