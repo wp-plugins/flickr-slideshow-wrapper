@@ -3,11 +3,11 @@
 Plugin Name: flickr-slideshow-wrapper
 Plugin URI: http://www.ramgad.com/board7-code-is-poetry/board8-wordpress/3-flickr-slideshow-wrapper/
 Description: Including flickr slideshows. Call fssw by adding [set_id=XYZ] (recommended!) or[set_id=XYZ] (recommended!) or &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. Version 5.0.1 or higher are requesting PHP5!
-Version: 5.2.2
+Version: 5.2.3
 Author: Jeannot Muller
 Author URI: http://www.ramgad.com/fssw/
 Min WP Version: 2.5
-Max WP Version: 3.5 
+Max WP Version: 3.5.1 
 */
 
 // Update routines
@@ -53,19 +53,19 @@ function fssw_description_option_page() {
 						<table class="form-table">
 						<tr><th scope="col" colspan="3" cellpadding="15">Settings</th></tr>
 		                                <tr><th scope="row">Width: (flickr)</th><td>
-		                    <input name="fssw_width" size="3" value="<?=get_option("fssw_width");?>" type="text" /><span style="color:red;">   Example: 450</span></td></tr>
+		                    <input name="fssw_width" size="3" value="<?=get_option("fssw_width");?>" type="text" /><span style="color:blue;">   Example: 450</span></td></tr>
 						<tr><th scope="row">Height: (flickr)</th><td>
-		                    <input name="fssw_height" size="3" value="<?=get_option("fssw_height");?>" type="text" /><span style="color:red;">   Example: 450</span></td></tr>
+		                    <input name="fssw_height" size="3" value="<?=get_option("fssw_height");?>" type="text" /><span style="color:blue;">   Example: 450</span></td></tr>
 						<tr><th scope="row">Border: (flickr)</th><td>
-			            <input name="fssw_border" size="3" value="<?=get_option("fssw_border");?>" type="text" /><span style="color:red;">   Example: 0</span></td></tr>
+			            <input name="fssw_border" size="3" value="<?=get_option("fssw_border");?>" type="text" /><span style="color:blue;">   Example: 0</span></td></tr>
 						<tr><th scope="row">Scrolling (yes|no): (flickr)</th><td>
-				    <input name="fssw_scroll" size="3" value="<?=get_option("fssw_scroll");?>" type="text" /><span style="color:red;">   Example: no</span></td></tr>
+				    <input name="fssw_scroll" size="3" value="<?=get_option("fssw_scroll");?>" type="text" /><span style="color:blue;">   Example: no</span></td></tr>
                                                 <tr><th scope="row">User-ID: (flickr)</th><td>
-			            <input name="fssw_userid" size="15" value="<?=get_option("fssw_userid");?>" type="text" /><span style="color:red;">   Example: 12345678@A12</span> (please use <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> to retrieve your ID)</td></tr>
+			            <input name="fssw_userid" size="15" value="<?=get_option("fssw_userid");?>" type="text" /><span style="color:blue;">   Example: 12345678@A12</span> (please use <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> to retrieve your ID)</td></tr>
 				                <tr><th scope="row">Width: (slideflickr)</th><td>
-			            <input name="fssw_sfli_w" size="3" value="<?=get_option("fssw_sfli_w");?>" type="text" /><span style="color:red;">   Example: 450</span></td></tr>
+			            <input name="fssw_sfli_w" size="3" value="<?=get_option("fssw_sfli_w");?>" type="text" /><span style="color:blue;">   Example: 450</span></td></tr>
                                                 <tr><th scope="row">Height: (slideflickr)</th><td>
-			            <input name="fssw_sfli_h" size="3" value="<?=get_option("fssw_sfli_h");?>" type="text" /><span style="color:red;">   Example: 450</span></td></tr>
+			            <input name="fssw_sfli_h" size="3" value="<?=get_option("fssw_sfli_h");?>" type="text" /><span style="color:blue;">   Example: 450</span></td></tr>
 </table>
 	      <br>
 	      <p class="submit_fssw"><input name="submit_fssw" type="submit" id="submit_fssw" value="Save changes &raquo;">
@@ -73,9 +73,7 @@ function fssw_description_option_page() {
 	    </form>
 	  </div>
 	</div>
-	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &lt;set_id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com" target="_blank">flickr.com</a>).</p>
-	<p style="text-algin:justify;">With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. You need to specify your flickr user-id under settings to get this feature look for tags in your library only. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.</p>
-	<p style="text-algin:justify;">You can call as well a  <a href="http://www.slideflickr.com/" target="_blank">slideflickr.com</a> slideshow by putting the slideflickr id into &lt;slidef="XYZ"&gt;. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
+	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &#091;set_id="XYZ"&#093; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com" target="_blank">flickr.com</a>).</p>
 	<p style="text-align:justify;">If you have problems with FSSW, please feel free to drop a comment at: <a href="http://www.ramgad.com/fssw/">http://www.ramgad.com/fssw/</a></p>
 
 <?php
