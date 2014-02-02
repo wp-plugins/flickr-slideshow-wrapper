@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: flickr-slideshow-wrapper
-Plugin URI: http://jeannot.me/fssw/
+Plugin URI: https://www.ramgad.com/fssw.html
 Description: Including flickr slideshows. Call fssw by adding [set_id=XYZ] (recommended!) or[set_id=XYZ] (recommended!) or &lt;set&#95;id="XYZ"&gt; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="htt://www.flickr.com" target="_blank">flickr.com</a>). With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information. You can as well implement a <a href="http://www.slideflickr.com" target="_blank">slideflickr.com</a> show by putting the slideflickr id into &lt;slidef="XYZ"&gt;. For your convenience you can as well use [set_id=XYZ] and/or [slidef=XYZ]. Version 5.0.1 or higher are requesting PHP5!
-Version: 5.4.2
+Version: 5.4.4
 Author: Jeannot Muller
-Author URI: http://jeannot.me/fssw/
+Author URI: https://www.ramgad.com/fssw.html
 Min WP Version: 2.5
-Max WP Version: 3.5.1 
+Max WP Version: 3.8.1 
 */
 
 // Update routines
@@ -74,7 +74,7 @@ function fssw_description_option_page() {
 	  </div>
 	</div>
 	<p style="text-align:justify;">Call your flickr-slideshow-wrapper by adding &#091;set_id="XYZ"&#093; to your content. Please do not forget to replace XYZ by the set-id of the flickr-set you want to implement (<a href="http://www.flickr.com" target="_blank">flickr.com</a>).</p>
-	<p style="text-align:justify;">If you have problems with FSSW, please feel free to drop a comment at: <a href="http://jeannot.me/fssw/">http://jeannot.me/fssw/</a></p>
+	<p style="text-align:justify;">If you have problems with FSSW, please feel free to drop a comment at: <a href="https://www.ramgad.com/fssw.html">https://www.ramgad.com/fssw.html</a></p>
 
 <?php
 
