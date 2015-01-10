@@ -4,11 +4,12 @@ Donate link: https://www.ramgad.com/fssw.html
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 3.8.1
-Stable tag: 5.4.4
+Stable tag: 5.4.5
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding [set_id=XYZ] to your content.
 
 == Description ==
+Flickr is NOT offering this type of embedding slideshows, hence this plugin-in is outdated!
 I didn't find any gallery which fulfilled my expectations. I don't need private pictures from flickr to be included to my blog, as once included they are not private anymore. That's why I wanted to use the standard functionality of flickr to embed slideshows.
 
 You can change the border, scrolling (yes/no), and width and height of the linked iframe under settings. I haven't found yet any parameter or hint to change the black background color. Please post me in case you have an advice and I'll change the coding accordingly. I might need some time to do so, as maintaing this  plugin is a hobby only. The influence on the standard functionality of the flickr API is very limited. Adapting width and height of the iframe might result in artefacts which can't be influenced by any wrapper coding out of wordpress.
@@ -23,10 +24,10 @@ You can change the border, scrolling (yes/no), and width and height of the linke
 7. With &lt;set&#95;tag="tag1, tag2, etc."&gt; your are able to compile your own tag-based set from flickr. Please refer to <a href="http://idgettr.com/" target="_blank">idgettr.com</a> to get the relevant information.
 8. Please be informed that slideflickr needs the same width and height values you defined during creation of your slideshow on their webpage - otherwise you'll see an endless loading bar.
 9. Ensure that you have put the code into your html section of your blog, not the visual one! Again, using the shortcodes [] is the recommended way to go.
-10. Have fun, and drop me a comment on <a href="https://www.ramgad.com/fssw.html" target="_blank">https://www.ramgad.com/fssw.html</a> if you have any comments, remarks, advices, wishes or if you're just happy.
+10. Have fun, and drop me a comment on <a href="http://www.ramgad.com/fssw/" target="_blank">http://www.ramgad.com/fssw/</a> if you have any comments, remarks, advices, wishes or if you're just happy.
 
 == Frequently Asked Questions ==
-Please read the FAQ <a href="https://www.ramgad.com/fssw.html" target="_blank">here</a>.
+Please read the FAQ <a href="http://www.ramgad.com/fssw/" target="_blank">here</a>.
 
 == Screenshots ==
 1. Option panel. Many thanks to <a href="http://www.pixelagogo.com">Cory Shubert</a> who authorized me to use some of his pictures for the screenshots you can find in the deployment package and here!
@@ -34,4 +35,4 @@ Please read the FAQ <a href="https://www.ramgad.com/fssw.html" target="_blank">h
 3. Slideshow (detailed view)
 
 == Arbitrary section ==
-Written by Jeannot Muller, please feel free to post a comment at <a href="https://www.ramgad.com/fssw.html" target="_blank">https://www.ramgad.com/fssw.html</a>
+Written by Jeannot Muller, please feel free to post a comment at <a href="http://www.ramgad.com/fssw/" target="_blank">http://www.ramgad.com/fssw/</a>
