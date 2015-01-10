@@ -4,12 +4,13 @@ Donate link: https://www.ramgad.com/fssw.html
 Tags: flickr, gallery,slideshow,wrapper,inline,pictures,images,slide show,fssw,sideflickr,flickr,embedded gallery,picshow,slide show
 Requires at least: 2.5.0
 Tested up to: 3.8.1
-Stable tag: 5.4.5
+Stable tag: 5.4.6
 
 Including standard flickr slideshows into your blog. Call your Flickr slideshow by adding [set_id=XYZ] to your content.
 
 == Description ==
-Flickr is NOT offering this type of embedding slideshows, hence this plugin-in is outdated!
+Flickr is NO LONGER offering this type of embedding slideshows, hence this plugin-in is outdated!
+
 I didn't find any gallery which fulfilled my expectations. I don't need private pictures from flickr to be included to my blog, as once included they are not private anymore. That's why I wanted to use the standard functionality of flickr to embed slideshows.
 
 You can change the border, scrolling (yes/no), and width and height of the linked iframe under settings. I haven't found yet any parameter or hint to change the black background color. Please post me in case you have an advice and I'll change the coding accordingly. I might need some time to do so, as maintaing this  plugin is a hobby only. The influence on the standard functionality of the flickr API is very limited. Adapting width and height of the iframe might result in artefacts which can't be influenced by any wrapper coding out of wordpress.
